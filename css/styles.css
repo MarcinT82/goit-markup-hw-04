@@ -11,6 +11,7 @@ body {
   --white-grey: rgba(255, 255, 255, 0.6);
   --less-white: #f5f4fa;
   --thin-line: #ececec;
+  --shadow: #2f303a;
 }
 .background-header {
   background-color: var(--white);
@@ -59,8 +60,12 @@ body {
   color: var(--brand-color);
 }
 .first-section-index {
-  background-color: var(--less-black);
+  background-color: var(--shadow);
+  background-image: url(/images/4.1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+  background-size: cover;
 }
+
 .first-section-text {
   font-family: "Roboto";
   font-style: normal;
@@ -201,6 +206,9 @@ body {
 .buttons:focus {
   background-color: var(--brand-color);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .links:hover,
 .links:focus {
@@ -318,15 +326,32 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+}
+.whole-footer {
+  display: flex;
+  gap: 50px;
 }
 .home-address {
-  padding: 40px 150px 20px 150px;
+  padding: 40px 0px 20px 150px;
   margin-right: auto;
 }
 .address-footer-links {
-  padding: 10px 150px 10px 150px;
+  padding: 10px 0px 10px 150px;
   margin-right: 0;
+}
+.join-us-text-icons {
+  width: 113px;
+}
+.join-us {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 70px 0px;
 }
 .options {
   display: flex;
@@ -351,12 +376,20 @@ body {
   width: 370px;
   margin: 0;
 }
+.items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .last-items {
   width: 370px;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 100px;
+}
+.last-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .bottom-line {
   border: 2px solid #eee;
@@ -403,6 +436,9 @@ body {
 .team {
   margin: 0;
   padding: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team img {
   display: block;
