@@ -12,6 +12,7 @@ body {
   --less-white: #f5f4fa;
   --thin-line: #ececec;
   --shadow: #2f303a;
+  --border-customers: #afb1b8;
 }
 .background-header {
   background-color: var(--white);
@@ -341,6 +342,7 @@ body {
 }
 .join-us-text-icons {
   width: 113px;
+  padding: 0;
 }
 .join-us {
   font-family: "Roboto";
@@ -351,7 +353,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
-  padding: 70px 0px;
+  padding: 70px 0px 0px 0px;
 }
 .options {
   display: flex;
@@ -457,5 +459,43 @@ figure {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 10px 40px 10px 40px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.box {
+  width: 270px;
+  background-color: var(--less-white);
+  border-radius: 4px;
+  padding: 25px 102.34px;
+}
+.box-border {
+  display: block;
+  margin: auto;
+}
+.contact-sprites {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.contact-sprites-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.social-icons {
+  padding: 0;
+  margin: 0;
+}
+.customers {
+  width: 170px;
+  border: 1px solid var(--border-customers);
+  border-radius: 4px;
+}
+.customers-container {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+.envelope-phone {
+  padding: 2px;
 }
