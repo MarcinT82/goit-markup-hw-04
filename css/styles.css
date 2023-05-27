@@ -481,8 +481,9 @@ figure {
 }
 .contact-sprites {
   display: flex;
-  justify-content: center;
   padding-bottom: 30px;
+  list-style: none;
+  margin: auto;
 }
 .contact-sprites-bottom {
   display: flex;
@@ -507,8 +508,25 @@ figure {
   gap: 0 30px;
 }
 .envelope-phone {
-  padding: 1px;
+  padding: auto;
+  fill: var(--border-customers);
 }
 .envelope-phone:hover {
-  fill: currentColor;
+  fill: var(--brand-color);
+}
+.social-circles {
+  fill: var(--border-customers);
+  margin: 12px;
+}
+.social-circles:hover {
+  fill: var(--white);
+}
+.circle {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.circle:hover,
+.circle:focus {
+  background-color: var(--brand-color);
 }
