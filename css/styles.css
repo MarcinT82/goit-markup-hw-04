@@ -510,5 +510,5 @@ figure {
   padding: 1px;
 }
 .envelope-phone:hover {
-  fill: var(--brand-color);
+  fill: currentColor;
 }
