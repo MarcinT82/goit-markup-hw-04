@@ -468,9 +468,16 @@ figure {
   border-radius: 4px;
   padding: 25px 102.34px;
 }
+
 .box-border {
   display: block;
   margin: auto;
+}
+.box:hover {
+  border: 2px solid var(--brand-color);
+}
+.box-border:hover {
+  fill: var(--brand-color);
 }
 .contact-sprites {
   display: flex;
@@ -491,11 +498,17 @@ figure {
   border: 1px solid var(--border-customers);
   border-radius: 4px;
 }
+.customers:hover {
+  border: 2px solid var(--brand-color);
+}
 .customers-container {
   display: flex;
   justify-content: center;
   gap: 0 30px;
 }
 .envelope-phone {
-  padding: 2px;
+  padding: 1px;
+}
+.envelope-phone:hover {
+  fill: var(--brand-color);
 }
