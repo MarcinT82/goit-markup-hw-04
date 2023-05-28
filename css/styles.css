@@ -62,10 +62,15 @@ body {
   color: var(--brand-color);
 }
 .first-section-index {
-  background-color: var(--shadow);
-  background-image: url(/images/4.1.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/4.1.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .first-section-text {
@@ -390,6 +395,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 .last-items:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
