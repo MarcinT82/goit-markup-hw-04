@@ -72,6 +72,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 .first-section-text {
@@ -92,8 +93,8 @@ body {
   justify-content: center;
 }
 .white-text {
-  display: flex;
-  width: 1000px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 .second-section-haeding {
   font-family: "Roboto";
