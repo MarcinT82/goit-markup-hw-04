@@ -529,12 +529,21 @@ figure {
   padding-left: 0;
   cursor: pointer;
 }
-.envelope-phone {
-  padding: auto;
+.envelope {
   fill: var(--border-customers);
   cursor: pointer;
+  margin-right: 10px;
+  margin-top: 5px;
 }
-.envelope-phone:hover {
+.phone {
+  fill: var(--border-customers);
+  cursor: pointer;
+  margin-right: 10px;
+}
+.links:hover > .envelope {
+  fill: var(--brand-color);
+}
+.links:hover > .phone {
   fill: var(--brand-color);
 }
 .social-circles {
