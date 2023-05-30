@@ -149,6 +149,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 0;
 }
 .third-section-job-titles {
   width: 87px;
@@ -160,6 +161,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey);
+  padding-bottom: 0;
 }
 .button-order {
   background: var(--brand-color);
@@ -485,12 +487,13 @@ figure {
 }
 .contact-sprites {
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  padding-left: 0;
+  justify-content: center;
   list-style: none;
-  margin: auto;
   cursor: pointer;
+  margin: auto;
+  padding-left: 0;
+  padding-bottom: 40px;
+  margin: 0;
 }
 .contact-sprites-bottom {
   display: flex;
@@ -538,10 +541,7 @@ figure {
   fill: var(--border-customers);
   margin: 12px;
 }
-.social-circles:hover {
-  fill: var(--white);
-  background-color: var(--brand-color);
-}
+
 .social-circles-bottom {
   fill: var(--white);
   margin: 12px;
@@ -552,8 +552,12 @@ figure {
   border-radius: 50%;
 }
 .circle:hover,
-circle:focus {
+.circle:focus {
   background-color: var(--brand-color);
+  fill: var(--white);
+}
+.circle:hover > .social-circles {
+  fill: var(--white);
 }
 .circle-bottom {
   border-radius: 50%;
