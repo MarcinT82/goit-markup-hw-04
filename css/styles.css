@@ -196,6 +196,11 @@ body {
 .links {
   text-decoration: inherit;
 }
+
+.links:hover,
+.links:focus {
+  color: var(--brand-color);
+}
 .link-portfolio {
   color: var(--brand-color);
 }
@@ -218,10 +223,6 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-.links:hover,
-.links:focus {
-  color: var(--brand-color);
 }
 .buttons {
   cursor: pointer;
@@ -332,7 +333,7 @@ body {
 }
 .footer-container {
   margin: 0;
-  padding: 20px;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -341,11 +342,11 @@ body {
   gap: 50px;
 }
 .home-address {
-  padding: 40px 0px 20px 150px;
+  padding: 40px 0 20px;
   margin-right: auto;
 }
 .address-footer-links {
-  padding: 10px 0px 10px 150px;
+  padding: 10px 0 10px;
   margin-right: 0;
 }
 .join-us-text-icons {
@@ -478,22 +479,18 @@ figure {
   border-radius: 4px;
   padding: 25px 102.34px;
 }
-
 .box-border {
   display: block;
   margin: auto;
 }
-.box:hover {
-  border: 2px solid var(--brand-color);
-}
-.box-border:hover {
-  fill: var(--brand-color);
-}
 .contact-sprites {
   display: flex;
+  justify-content: space-evenly;
   padding-bottom: 30px;
+  padding-left: 0;
   list-style: none;
   margin: auto;
+  cursor: pointer;
 }
 .contact-sprites-bottom {
   display: flex;
@@ -502,8 +499,8 @@ figure {
   margin: auto;
   padding-left: 0;
   gap: 10px;
+  cursor: pointer;
 }
-
 .social-icons {
   padding: 0;
   margin: 0;
@@ -527,10 +524,12 @@ figure {
   gap: 0 30px;
   list-style: none;
   padding-left: 0;
+  cursor: pointer;
 }
 .envelope-phone {
   padding: auto;
   fill: var(--border-customers);
+  cursor: pointer;
 }
 .envelope-phone:hover {
   fill: var(--brand-color);
@@ -539,17 +538,22 @@ figure {
   fill: var(--border-customers);
   margin: 12px;
 }
+.social-circles:hover {
+  fill: var(--white);
+  background-color: var(--brand-color);
+}
 .social-circles-bottom {
   fill: var(--white);
   margin: 12px;
 }
-.social-circles:hover {
-  fill: var(--white);
-}
 .circle {
-  border-radius: 50%;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+}
+.circle:hover,
+circle:focus {
+  background-color: var(--brand-color);
 }
 .circle-bottom {
   border-radius: 50%;
@@ -559,9 +563,5 @@ figure {
 }
 .circle-bottom:hover,
 .circle-bottom:focus {
-  background-color: var(--brand-color);
-}
-.circle:hover,
-.circle:focus {
   background-color: var(--brand-color);
 }
